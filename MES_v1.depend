@@ -1,0 +1,208 @@
+# depslib dependency file v1.0
+1508058151 source:d:\c++\mes_v1\main.cpp
+	<iostream>
+	"BView.h"
+	"BModel.h"
+	"BControl.h"
+	"Switch.h"
+	"Engine.h"
+	"LogFileRead.h"
+
+1507986093 d:\c++\mes_v1\base\bview.h
+	"IControl.h"
+	<memory>
+	"IView.h"
+	"BModel.h"
+	"BControl.h"
+	<windows.h>
+
+1507998992 d:\c++\mes_v1\base\bcontrol.h
+	<vector>
+	"TReadDevice.h"
+	"../Global/GlobalVariables.h"
+	"BModel.h"
+	<map>
+	"IControl.h"
+
+1507998992 d:\c++\mes_v1\thread\treaddevice.h
+	"BThread.h"
+	"IDevice.h"
+	"IMessage.h"
+	"LogFileRead.h"
+	<memory>
+	<vector>
+	<sstream>
+	<iostream>
+	<iomanip>
+
+1507238939 d:\c++\mes_v1\base\bthread.h
+	"IThread.h"
+
+1507998992 d:\c++\mes_v1\interfaces\ithread.h
+	<thread>
+	<atomic>
+
+1507997280 d:\c++\mes_v1\ios\base\logfilewrite.h
+	"ITransmiter.h"
+
+1507851117 d:\c++\mes_v1\ios\base\bostream.h
+	<string>
+	"ITransmiter.h"
+	<fstream>
+
+1507998992 d:\c++\mes_v1\interfaces\itransmiter.h
+	"IMessage.h"
+	<memory>
+
+1508027184 d:\c++\mes_v1\interfaces\imessage.h
+	"../Global/GlobalVariables.h"
+	<string>
+
+1507552899 d:\c++\mes_v1\global\globalvariables.h
+	<iostream>
+
+1507739291 d:\c++\mes_v1\message\devicestatus.h
+	"BMessage.h"
+
+1508027184 d:\c++\mes_v1\base\bmessage.h
+	"IMessage.h"
+
+1507985826 d:\c++\mes_v1\base\bmodel.h
+	<vector>
+	"IDevice.h"
+	"IModel.h"
+	"Switch.h"
+	"Engine.h"
+	"BControl.h"
+	"BConfigFile.h"
+	"ConfigMessage.h"
+	"../Global/GlobalVariables.h"
+
+1507996483 d:\c++\mes_v1\interfaces\idevice.h
+	"../Global/GlobalVariables.h"
+	"LogRW.h"
+	<memory>
+	<string>
+
+1507998366 d:\c++\mes_v1\interfaces\imodel.h
+	"../Global/GlobalVariables.h"
+	"LogFileWrite.h"
+	<memory>
+
+1507998992 d:\c++\mes_v1\interfaces\iview.h
+	"BThread.h"
+	"../Global/GlobalVariables.h"
+	"IModel.h"
+
+1507967825 source:d:\c++\mes_v1\src\bcontrol.cpp
+	"BControl.h"
+
+1507998992 d:\c++\mes_v1\interfaces\icontrol.h
+	<string>
+	<memory>
+	<IDevice.h>
+
+1507997280 d:\c++\mes_v1\ios\base\logfileread.h
+	"IReciver.h"
+
+1507851117 d:\c++\mes_v1\ios\base\bistream.h
+	<fstream>
+	"IReciver.h"
+
+1507808309 d:\c++\mes_v1\interfaces\ireciver.h
+	<memory>
+	<IMessage.h>
+
+1507996846 source:d:\c++\mes_v1\src\bdevice.cpp
+	"BDevice.h"
+	<sstream>
+
+1507996846 d:\c++\mes_v1\base\bdevice.h
+	"IDevice.h"
+	"BThread.h"
+	"IMessage.h"
+	<string>
+	<DeviceStatus.h>
+
+1507851132 source:d:\c++\mes_v1\src\bistream.cpp
+	"BIStream.h"
+
+1507996846 d:\c++\mes_v1\devices\switch.h
+	"BDevice.h"
+	"DeviceStatus.h"
+	<cstdlib>
+	<iostream>
+
+1507997015 d:\c++\mes_v1\devices\engine.h
+	"BDevice.h"
+	<memory>
+
+1507907368 source:d:\c++\mes_v1\src\bmessage.cpp
+	"BMessage.h"
+
+1507998366 source:d:\c++\mes_v1\src\bmodel.cpp
+	"BModel.h"
+	<iomanip>
+
+1507851138 source:d:\c++\mes_v1\src\bostream.cpp
+	"BOStream.h"
+
+1507739919 source:d:\c++\mes_v1\src\bthread.cpp
+	"BThread.h"
+
+1507998366 source:d:\c++\mes_v1\src\bview.cpp
+	"BView.h"
+
+1507739272 source:d:\c++\mes_v1\src\devicestatus.cpp
+	"DeviceStatus.h"
+
+1507997015 source:d:\c++\mes_v1\src\engine.cpp
+	"Engine.h"
+	<ctime>
+	<cstdlib>
+
+1507998366 source:d:\c++\mes_v1\src\logfileread.cpp
+	"LogFileRead.h"
+
+1507998366 source:d:\c++\mes_v1\src\logfilewrite.cpp
+	"LogFileWrite.h"
+
+1507996870 source:d:\c++\mes_v1\src\switch.cpp
+	"Switch.h"
+
+1507998992 source:d:\c++\mes_v1\src\treaddevice.cpp
+	"TReadDevice.h"
+
+1507998366 d:\c++\mes_v1\ios\base\logrw.h
+	"LogFileRead.h"
+	"LogFileWrite.h"
+	<mutex>
+	<condition_variable>
+	<fstream>
+	<DeviceStatus.h>
+	<sstream>
+
+1508027219 source:d:\c++\mes_v1\src\logrw.cpp
+	"LogRW.h"
+
+1507989354 d:\c++\mes_v1\base\bconfigfile.h
+	"LogRW.h"
+	"IConfigFile.h"
+	<vector>
+	"ConfigMessage.h"
+	"../Global/GlobalVariables.h"
+
+1507998992 d:\c++\mes_v1\message\configmessage.h
+	"BMessage.h"
+
+1507998992 d:\c++\mes_v1\interfaces\iconfigfile.h
+	"LogRW.h"
+	<vector>
+	<memory>
+
+1507992427 source:d:\c++\mes_v1\src\bconfigfile.cpp
+	"BConfigFile.h"
+
+1507893357 source:d:\c++\mes_v1\src\configmessage.cpp
+	"ConfigMessage.h"
+

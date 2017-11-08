@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="MES_v1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/MES_v1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="Interfaces" />
+					<Add directory="Base" />
+					<Add directory="Devices" />
+					<Add directory="Thread" />
+					<Add directory="Message" />
+					<Add directory="IOS/Base" />
+					<Add directory="IOS/Interface" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/MES_v1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="Interfaces" />
+					<Add directory="Base" />
+					<Add directory="Devices" />
+					<Add directory="Thread" />
+					<Add directory="Message" />
+					<Add directory="IOS/Base" />
+					<Add directory="IOS/Interface" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++11" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Base/BConfigFile.h" />
+		<Unit filename="Base/BControl.h" />
+		<Unit filename="Base/BDevice.h" />
+		<Unit filename="Base/BMessage.h" />
+		<Unit filename="Base/BModel.h" />
+		<Unit filename="Base/BThread.h" />
+		<Unit filename="Base/BView.h" />
+		<Unit filename="Devices/Engine.h" />
+		<Unit filename="Devices/Switch.h" />
+		<Unit filename="Global/GlobalVariables.h" />
+		<Unit filename="IOS/Base/LogFileRead.h" />
+		<Unit filename="IOS/Base/LogFileWrite.h" />
+		<Unit filename="IOS/Base/LogRW.h" />
+		<Unit filename="IOS/Interface/IReciver.h" />
+		<Unit filename="IOS/Interface/ITransmiter.h" />
+		<Unit filename="Interfaces/IConfigFile.h" />
+		<Unit filename="Interfaces/IControl.h" />
+		<Unit filename="Interfaces/IDevice.h" />
+		<Unit filename="Interfaces/IMessage.h" />
+		<Unit filename="Interfaces/IModel.h" />
+		<Unit filename="Interfaces/IReciver.h" />
+		<Unit filename="Interfaces/IThread.h" />
+		<Unit filename="Interfaces/ITransmiter.h" />
+		<Unit filename="Interfaces/IView.h" />
+		<Unit filename="Message/ConfigMessage.h" />
+		<Unit filename="Message/DeviceStatus.h" />
+		<Unit filename="Thread/TReadDevice.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/BConfigFile.cpp" />
+		<Unit filename="src/BControl.cpp" />
+		<Unit filename="src/BDevice.cpp" />
+		<Unit filename="src/BMessage.cpp" />
+		<Unit filename="src/BModel.cpp" />
+		<Unit filename="src/BThread.cpp" />
+		<Unit filename="src/BView.cpp" />
+		<Unit filename="src/ConfigMessage.cpp" />
+		<Unit filename="src/DeviceStatus.cpp" />
+		<Unit filename="src/Engine.cpp" />
+		<Unit filename="src/LogFileRead.cpp" />
+		<Unit filename="src/LogFileWrite.cpp" />
+		<Unit filename="src/LogRW.cpp" />
+		<Unit filename="src/Switch.cpp" />
+		<Unit filename="src/TReadDevice.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
